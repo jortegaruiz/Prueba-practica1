@@ -1,0 +1,148 @@
+body
+{
+	background-color: #8eadc5;
+}
+
+button
+{
+	background-color: #7fba67;
+	color: #ffffff;
+	border: none;
+	width: 100%;
+	padding: 30px;
+	font-size: 1em;
+	margin-top: 10px;
+}
+
+
+body.Aclarado
+{
+	transition: background-color 1.5s;
+	background-color: #8de1bd;
+}
+
+body.Oscurecido
+{
+	transition: background-color 1.5s;
+	background-color: #577a76;
+}
+
+#idZonaGestos
+{
+	background-color: #7fba67;
+	width: 100%; 
+	margin-top: 10px;
+	min-height: 300px;
+	display: block;
+}
+
+#idZonaGestos.tapPulsado
+{
+	-webkit-animation: animacionTap 100ms 1;
+}
+
+@-webkit-keyframes animacionTap
+{
+	0%, 100%
+	{
+		background-color: #7fba67;
+	}
+	50%
+	{
+		background-color: #ffff00;
+	}
+}
+
+#idZonaGestos.doubletapPulsado
+{
+	-webkit-animation: animacionDoubleTap 1.5s 1;
+}
+
+@-webkit-keyframes animacionDoubleTap
+{
+	0%, 100%
+	{
+		background-color: #7fba67;
+	}
+	50%
+	{
+		background-color: #8de1bd;
+	}
+}
+
+#idZonaGestos.pressPulsado
+{
+	-webkit-animation: animacionPress 1.5s 1;
+}
+
+@-webkit-keyframes animacionPress
+{
+	0%, 100%
+	{
+		background-color: #7fba67;
+	}
+	50%
+	{
+		background-color: #577a76;
+	}
+}
+
+#idZonaGestos.swipeDerechoPulsado
+{
+	-webkit-animation: animacionSwipeDerecho 1.5s 1;
+}
+
+@-webkit-keyframes animacionSwipeDerecho
+{
+	0%, 100%
+	{
+		margin-left: 0%;
+	}
+	50%
+	{
+		margin-left: 100%;
+	}
+}
+
+#idZonaGestos.swipeIzquierdoPulsado
+{
+	-webkit-animation: animacionSwipeIzquierdo 1.5s 1;
+}
+
+@-webkit-keyframes animacionSwipeIzquierdo
+{
+	0%, 100%
+	{
+		width: 100%;
+	}
+	50%
+	{
+		width: 0%;
+	}
+}
+
+#idZonaGestos.rotateDerechaPulsado
+{
+	-webkit-animation: animacionRotateDerecha 1.5s 1;
+}
+
+@-webkit-keyframes animacionRotateDerecha
+{
+	100%
+	{
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+#idZonaGestos.rotateIzquierdaPulsado
+{
+	-webkit-animation: animacionRotateIzquierda 1.5s 1;
+}
+
+@-webkit-keyframes animacionRotateIzquierda
+{
+	100%
+	{
+		-webkit-transform: rotate(-360deg);
+	}
+}

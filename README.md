@@ -1,2 +1,14 @@
-# Prueba-practica1
-Prueba practica 1 realizada durante el MOOC _PhoneGap_
+# A Blank PhoneGap App
+
+## Usage
+
+### PhoneGap CLI
+
+    $ phonegap create my-app --template blank
+
+### Desktop
+
+In your browser, open the file:
+
+    /www/index.html
+
